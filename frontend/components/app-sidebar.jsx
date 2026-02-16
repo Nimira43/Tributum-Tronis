@@ -27,7 +27,7 @@ const data = {
   user: {
     name: 'admin',
     email: 'admin@dubsar.com',
-    avatar: '/avatars/shadcn.jpg',
+    avatar: '#',
   },
   navMain: [
     {
