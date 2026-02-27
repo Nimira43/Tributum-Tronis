@@ -30,7 +30,7 @@ export function LoginForm({
             <span className='text-base font-semibold pt-1'>Dub Sar Systema</span>
           </CardTitle>
           <CardDescription className='text-center'>
-            Login to your accoount
+            Login to your account
           </CardDescription>
         </CardHeader>
         <CardContent>

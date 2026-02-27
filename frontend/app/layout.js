@@ -1,6 +1,7 @@
 import { Poppins } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
+import SessionWrapper from '@/components/SessionWrapper'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -16,14 +17,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en' suppressHydrationWarning>
       <body className={poppins.className}>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        <SessionWrapper>        
+          <ThemeProvider
+            attribute='class'
+            defaultTheme='system'
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </SessionWrapper>
       </body>
     </html>
   )
