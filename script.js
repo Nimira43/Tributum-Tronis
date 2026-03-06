@@ -7,7 +7,6 @@ const hudText = document.querySelector('.hud-text')
 scene.addEventListener('mousemove', (e) => {
   const relX = e.clientX / window.innerWidth - 0.5
   const relY = e.clientY / window.innerHeight - 0.5
-
   const tiltY = relX * 30 
   const tiltX = -relY * 30 
 
